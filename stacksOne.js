@@ -48,3 +48,5 @@ stact.push("Value2")
 console.log(stact.first);
 
 console.log(stact.size);
+
+console.log(stact.pop());
