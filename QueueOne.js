@@ -31,7 +31,7 @@ class Queue {
     if(this.first == this.last){
         this.last = null;
     }    
-    this.first = this.first.next;
+    this.first = this.first.next; //Asigna al index primero el valor del nodo next.
     this.size--
     return temp.value;
   }
@@ -41,11 +41,11 @@ class Queue {
 const test = new Queue;
 
 test.enqueue("Valor 1");
-// test.enqueue("Valor 2");
-// test.enqueue("Valor 3");
-// test.enqueue("Valor 4");
+test.enqueue("Valor 2");
+test.enqueue("Valor 3");
+test.enqueue("Valor 4");
 
-// console.log(test);
-// console.log(test.size);
+console.log(test);
+console.log(test.size);
 console.log(test.dequeue());
 console.log(test);

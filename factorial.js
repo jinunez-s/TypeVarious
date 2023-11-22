@@ -13,5 +13,5 @@ function factorial(numero){
 // if(true == 1) console.log("Holaaaa");
 // var add(x,t) = return x+t;
 
-throw "unexpected"
+//throw "unexpected"
 console.error("unexpected");

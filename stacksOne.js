@@ -31,7 +31,7 @@ class Stack{
         if(this.first == this.last){
             this.last = null;
         }
-        this.first = this.first.next;
+        this.first = this.first.next; // this assigns the first value = to the value in the next node.
         this.size--;
         return temp.value;
     }
