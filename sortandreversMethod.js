@@ -120,8 +120,6 @@ function ordenarPorFrecuencia(arr) {
   }
   
   // Example usage:
-  const originalArray = [3, 1, 2, 3, 1, 2, 4, 4];
-  const sortedArray = sortIt(originalArray);
   
   console.log("Original Array:", originalArray);
   console.log("Sorted Array:", sortedArray);
