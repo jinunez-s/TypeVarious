@@ -2,9 +2,9 @@ let animal = {
     isSleeping:false,
     walk(){
         if(this.isSleeping){
-            return 'I walk';
+            return 'Is sleeping';
         }else{
-            return 'Is sleeping'
+            return 'I walk'
         }
     },
     sleep(){
@@ -18,18 +18,18 @@ let rabbit = {
 };
 
 //rabbit.sleep();
-console.log(rabbit.isSleeping);
-console.log(rabbit.walk());
-rabbit.sleep();
-console.log(rabbit.isSleeping);
-console.log(rabbit.walk());
+// console.log(rabbit.isSleeping);//false
+// console.log(rabbit.walk());//I walk
+// rabbit.sleep();
+// console.log(rabbit.isSleeping);//true
+// console.log(rabbit.walk());// Is sleeping
 //console.log(Object.keys(rabbit));
 //for(let prop in rabbit) //console.log(prop);
 for(let prop in rabbit){
 let isOwn = rabbit.hasOwnProperty(prop);
 if(isOwn){
-    //console.log(`Our: ${prop}`);
+    console.log(`Our: ${prop}`);
 }else{
-    //console.log(`Inherited: ${prop}`);
+    console.log(`Inherited: ${prop}`);
 }
 }
